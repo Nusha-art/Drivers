@@ -1,14 +1,14 @@
 # Задание
 Собрать модуль ядра
 
-##Сборка модуля:
+## Сборка модуля:
 <img width="719" height="320" alt="image" src="https://github.com/user-attachments/assets/6c587f3a-2687-4074-bb50-23569d1a6a06" />
 
-##Загрузка модуля:
+## Загрузка модуля:
 
 <img width="383" height="24" alt="image" src="https://github.com/user-attachments/assets/9b8ccf8d-04f0-480b-b16d-e755b6a4ff7f" />
 
-##Проверка модуля:
+## Проверка модуля:
 
 <img width="371" height="42" alt="image" src="https://github.com/user-attachments/assets/1815a121-7386-455a-8563-cc543bfb2e5e" />
 
