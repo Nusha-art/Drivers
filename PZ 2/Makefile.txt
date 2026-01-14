@@ -1,8 +1,26 @@
-obj-m+=pz2.o
+# Makefile для Fedora с ядром 6.17
+obj-m := simple.o
 
-PWD := $(CURDIR)
+KDIR ?= /usr/src/kernels/6.17.1-300.fc43.x86_64
+PWD := $(shell pwd)
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
+
 clean:
-	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) clean
+	$(MAKE) -C $(KDIR) M=$(PWD) clean
+
+install:
+	sudo insmod simple.ko
+	sudo dmesg | tail -5
+
+remove:
+	sudo rmmod simple
+	sudo dmesg | tail -5
+
+help:
+	@echo "Targets:"
+	@echo "  all     - Build module"
+	@echo "  clean   - Clean build files"
+	@echo "  install - Load module"
+	@echo "  remove  - Unload module"
