@@ -83,6 +83,7 @@ ls output/images
 ```
 Вывод
 ```
+<img width="532" height="38" alt="image" src="https://github.com/user-attachments/assets/d1025d34-7a6f-41dc-b6a8-f4da0155fe05" />
 
 ```
 # Запуск QMEU
@@ -94,3 +95,6 @@ qemu-system-x86_64 \
   -nographic
 ```
 ### Результат
+
+<img width="652" height="481" alt="image" src="https://github.com/user-attachments/assets/fd830c96-0375-4295-ae21-9ac91576a1f4" />
+
